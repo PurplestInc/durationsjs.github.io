@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
  * liseners.
  */
 
-(() => {	
+(() => {
   durations('.js-duration', {
     date: 'July 27, 2018 12:00:00',
     text: 'Coming Soon!'
