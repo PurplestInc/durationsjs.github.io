@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76678048-12"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-76678048-12');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>durations.js - JavaScript animated durations library</title>
+    <link rel="canonical" href="https://durationsjs.com/">
+    <meta name="description" content="durations.js is a tiny library to help provide animated durations functionality for those that do not currently use another solution.">
+    <meta name="keywords" content="duration, time, timing, countdown, countup, welcome, homepage, landing page, Rob Dukarski, Dukarski, Purplest Inc, Purplest, Fort Wayne, Indiana">
+    <meta name="robots" content="noarchive">
+    <meta name="author" content="Rob Dukarski">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="durations.js - JavaScript animated durations library">
+    <meta name="application-name" content="durations.js - JavaScript animated durations library">
+    <meta name="msapplication-navbutton-color" content="#9752e7">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#9752e7">
+    <meta property="og:title" content="durations.js - JavaScript animated durations library">
+    <meta property="og:site_name" content="durations.js">
+    <meta property="og:url" content="https://durationsjs.com">
+    <meta property="og:description" content="durations.js is a tiny library to help provide animated durations functionality for those that do not currently use another solution.">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en-US">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="durations.js - JavaScript animated durations library">
+    <meta property="twitter:description" content="durations.js is a tiny library to help provide animated durations functionality for those that do not currently use another solution.">
+    <meta property="twitter:creator" content="@PurplestInc">
+    <meta property="twitter:url" content="https://durationsjs.com">
+    <meta property="twitter:image" content="">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/solid.css" integrity="sha384-S2gVFTIn1tJ/Plf+40+RRAxBCiBU5oAMFUJxTXT3vOlxtXm7MGjVj62mDpbujs4C" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/fontawesome.css" integrity="sha384-0b7ERybvrT5RZyD80ojw6KNKz6nIAlgOKXIcJ0CV7A6Iia8yt2y1bBfLBOwoc9fQ" crossorigin="anonymous">
+  </head>
+  <body>
+    <aside class="spotlight">
+      <div class="duration js-duration">Loading...</div>
+      <button class="scroll js-scroll hover fas fa-angle-double-down" title="Click to go to the main content."></button>
+    </aside>
+    <div class="background"></div>
+    <header>
+      <h1>durations.js - animated durations library</h1>
+      <ul class="stats">
+        <li>
+          <a href="https://github.com/PurplestInc/durations.js/blob/master/LICENSE" title="View the License"><img src="https://img.shields.io/badge/license-MIT-9752e7.svg" alt="License: MIT"></a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/package/durations.js" title="Go to the NPM landing page for durations.js"><img src="https://img.shields.io/npm/dt/durations.js.svg?colorB=rgb(151%2C82%2C231)" alt="Total NPM Downloads"></a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/package/durations.js#installation" title="Go to the installation section of the NPM landing page for durations.js"><img src="https://img.shields.io/npm/v/durations.js.svg?colorB=rgb(151%2C82%2C231)" alt="Latest NPM Version"></a>
+        </li>
+        <li>
+          <a href="https://cdn.jsdelivr.net/npm/durations.js@1.0.7/durations.min.js?compression=gzip" title="Copy this link for the direct gzipped CDN file of durations.min.js"><img src="https://img.shields.io/badge/gzip%20size-698%20B-9752e7.svg" alt="gzip size: 698 bytes"></a>
+        </li>
+      </ul>
+      <nav class="js-nav">
+        <a href="#basic-info" title="Basic Info">Basic Info</a>
+        <a href="#features" title="Features">Features</a>
+        <a href="#getting-started" title="Getting Started">Getting Started</a>
+        <a href="#installation" title="Installation">Installation</a>
+        <a href="#usage" title="Usage">Usage</a>
+        <a href="#examples" title="Examples">Examples</a>
+        <a href="#documentation" title="Documentation">Documentation</a>
+        <a href="#changelog" title="Changelog">Changelog</a>
+        <a href="#license" title="License">License</a>
+      </nav>
+    </header>
+    <main>
+      <h2 class="basic-info">Basic Info <button class="section-btt js-section-btt fas fa-angle-up" title="Click to go back to the navigation bar, if necessary."></button></h2>
+      <p>A animated durations library built to provide convenience for developers.</p>
+      <p>If you like the smooth scrolling functionality found here you may like our <a href="https://scrollsjs.com?ref=durationsjs.com" title="scrolls.js - smooth scrolling library">scrolls.js</a> smooth scrolling <a href="https://github.com/PurplestInc/scrolls.js" title="GitHub repo for scrolls.js">library</a>!</p>
+      <h2 class="features">Features <button class="section-btt js-section-btt fas fa-angle-up" title="Click to go back to the navigation bar, if necessary."></button></h2>
+      <ul>
+        <li>Plug-and-play (unless you have other JavaScript that uses <code>durations()</code> already...)</li>
+        <li>Selector-based targeting</li>
+        <li>Allows a function to be called when an animated duration has started and/or ended</li>
+        <li>Customizeable before start and after end text</li>
+        <li>Customizeable before duration and after duration text</li>
+        <li>Customizeable start and end dates, of course</li>
+        <li>Fully open source</li>
+      </ul>
+      <h2 class="getting-started">Getting Started <button class="section-btt js-section-btt fas fa-angle-up" title="Click to go back to the navigation bar, if necessary."></button></h2>
+      <h3 class="installation">Installation</h3>
+      <p>You can install the libaray via npm:</p>
+<pre class="code"><code>npm i durations.js</code></pre>
+      <p>or via CDN:</p>
+<pre class="code"><code>&lt;!-- Source Version --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/durations.js@1.0.7/durations.js"&gt;&lt;/script&gt;
+</code></pre>
+<pre class="code"><code>&lt;!-- Minified Version --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/durations.js@1.0.7/durations.min.js"&gt;&lt;/script&gt;
+</code></pre>
+      <h3 class="usage">Usage</h3>
+      <div>
+<pre><code>// Initialize a duration
+durations('h2', {
+  date: 'July 27, 2018 12:00:00 (EST)',
+  text: 'Coming Soon!'
+}, {
+  date: 'July 28, 2018 12:00:00 (EST)',
+  text: 'The launch is over!'
+}, true);
+</code></pre>
+      </div>
+      <h2 class="examples">Examples <button class="section-btt js-section-btt fas fa-angle-up" title="Click to go back to the navigation bar, if necessary."></button></h2>
+      <h3>Time since  January 1st, 1970 (UTC)</h3>
+      <p class="js-duration-since">Loading...</p>
+      <p>HTML:</p>
+<pre class="code"><code>&lt;p class="js-duration-since"&gt;Loading...&lt;/p&gt;</code></pre>
+      <p>JS:</p>
+<pre class="code"><code>&lt;script src="https://cdn.jsdelivr.net/npm/duations.js@1.0.7/durations.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+durations('.js-duration-since',{
+  date: 0
+},{
+  afterText: ' since the beginning of JS time.',
+  beforeText: 'There has been ',
+  date: 0
+}, false);
+&lt;/script&gt;
+</code></pre>
+      <h3>Time until December 31st, 9999</h3>
+      <p class="js-duration-until">Loading...</p>
+      <p>HTML:</p>
+<pre class="code"><code>&lt;p class="js-duration-until"&gt;Loading...&lt;/p&gt;</code></pre>
+      <p>JS:</p>
+<pre class="code"><code>&lt;script src="https://cdn.jsdelivr.net/npm/duations.js@1.0.7/durations.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+durations('.js-duration-until',{
+  afterText: ' until December 31st, 9999.',
+  beforeText: 'There are ',
+  date: 'July 28, 2018 12:00:00 (EST)'
+},{
+  date: 'Dec 31, 9999',
+  text: 'The event has ended.'
+}, true);
+&lt;/script&gt;
+</code></pre>
+      <h2 class="documentation">Documentation <button class="section-btt js-section-btt fas fa-angle-up" title="Click to go back to the navigation bar, if necessary."></button></h2>
+<pre><code>/**
+ * Animates a duration change among two dates based on the current time.
+ * 
+ * @param {String} selector - Element(s) to add the duration message
+ * @param {Object} start - Object of start date, before text, after text, text
+ *                         to display if before the start date, and a callback
+ *                         function to execute when animated duration starts
+ * @param {Object} end - Object of end date, before text, after text, text to
+ *                       display when past the end date, and a callback function
+ *                       to execute when the end date has been passed
+ * @param {Boolean} stop - Whether duration should stop or not, if not then it
+ *                         will continue counting without ever displaying the
+ *                         end text
+ */
+
+// selector would be any DOM selector you wish, on our landing page we use
+// ".js-duration". The selector value must be supplied.
+
+// start object can be as follows but should at least include a start date.
+// Defautls to displaying the duration and if before the start date of 
+// July 30, 2018 12:00:00 (EST) it will display "Coming Soon!".
+
+{
+  afterText: ' until the event occurs.',
+  beforeText: 'There are ',
+  callback: () => {
+    return navigator.sendBeacon('/api/log', { start: true });
+  },
+  date: 'July 27, 2018 12:00:00 (EST)',
+  text: 'The new event is coming soon!!'
+}
+
+// end object can be as follows but should at least include an end date.
+// Defaults to displaying the duration and when past the text
+// "Event has passed.".
+
+{
+  afterText: ' since the event occurred.',
+  beforeText: 'There have been ',
+  callback: () => {
+    return navigator.sendBeacon('/api/log', { end: true });
+  },
+  date: 'July 28, 2018 12:00:00 (EST)',
+  text: 'The event has ended.'
+}
+
+// stop boolean tells the function whether or not it should continue counting
+// after the end date has passed, possibly so you can let people know how much
+// time has passed since the event. Defaults to true.
+
+true
+
+// Putting it together now!
+
+durations('.js-duration',{
+  afterText: ' until the event occurs.',
+  beforeText: 'There are ',
+  callback: () => {
+    return navigator.sendBeacon('/api/log', { start: true });
+  },
+  date: 'July 27, 2018 12:00:00 (EST)',
+  text: 'The new event is coming soon!!'
+},{
+  afterText: ' since the event occurred.',
+  beforeText: 'There have been ',
+  callback: () => {
+    return navigator.sendBeacon('/api/log', { end: true });
+  },
+  date: 'July 28, 2018 12:00:00 (EST)',
+  text: 'The event has ended.'
+}, true);
+</code></pre>
+      <h2 class="changelog">Changelog <button class="section-btt js-section-btt fas fa-angle-up" title="Click to go back to the navigation bar, if necessary."></button></h2>
+      <p>Please see <a href="https://github.com/PurplestInc/durations.js/blob/master/CHANGELOG.md" title="CHANGELOG.md">CHANGELOG.md</a> for details.</p>
+      <h2 class="license">License <button class="section-btt js-section-btt fas fa-angle-up" title="Click to go back to the navigation bar, if necessary."></button></h2>
+      <p>MIT</p>
+      <p>Copyright &copy; 2018 Purplest, Inc.</p>
+    </main>
+    <button class="btt js-btt fas fa-angle-up" title="Click to go back to the top of the page."></button>
+    <footer>
+      <p>Copyright &copy; <span class="js-year"></span> <a class="brand-color" target="_blank" title="Purplest, Inc." href="https://purplest.com?ref=durationsjs.com">Purplest, Inc.</a></p>
+      <p>Built by: <a class="brand-color" target="_blank" title="Rob Dukarski's Portfolio" href="https://rob.dukar.ski?ref=durationsjs.com">Rob Dukarski</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/scrolls.js@1.0.11/scrolls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/durations.js@1.0.7/durations.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

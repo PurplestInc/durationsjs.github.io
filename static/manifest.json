@@ -1,0 +1,9 @@
+{
+  "name" : "durations.js",
+  "short_name" : "durations.js",
+  "start_url" : "/?utm_source=homescreen",
+  "display" : "standalone",
+  "orientation" : "portrait",
+  "background_color" : "#9752E7",
+  "theme_color" : "#9752E7"
+}
