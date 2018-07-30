@@ -1,9 +1,9 @@
 /**
- * @fileoverview main.js is used for adding base functionaltiy to the
+ * @fileoverview main.js is used for adding base functionality to the
  *               durationsjs.com website.
  * @author Rob Dukarski <rob@purplest.com> (https://github.com/RobDukarski)
  * @copyright 2018 Purplest, Inc.
- * @version 1.0.0
+ * @version 1.0.2
  */
 
 const bttButton = document.querySelector('.js-btt');
