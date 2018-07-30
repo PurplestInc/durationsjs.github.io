@@ -10,7 +10,7 @@ const bttButton = document.querySelector('.js-btt');
 const links = document.querySelectorAll('.js-nav a');
 const scrollButton = document.querySelector('.js-scroll');
 const sectionBttButtons = document.querySelectorAll('.js-section-btt');
-const year = document.querySelector('.js-year');
+const years = document.querySelectorAll('.js-year');
 
 /**
  * Scrolls to the top of the page.
@@ -104,8 +104,10 @@ window.addEventListener('scroll', () => {
     });
   }
 
-  if (year) {
-    year.innerText = new Date().getFullYear();
+  if (years) {
+    years.forEach((year) => {
+      year.innerText = new Date().getFullYear();
+    });
   }
   
   if (scrollButton) {
