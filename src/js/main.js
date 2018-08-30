@@ -3,7 +3,7 @@
  *               durationsjs.com website.
  * @author Rob Dukarski <rob@purplest.com> (https://github.com/RobDukarski)
  * @copyright 2018 Purplest, Inc.
- * @version 1.0.2
+ * @version 1.0.3
  */
 
 const bttButton = document.querySelector('.js-btt');
@@ -11,6 +11,8 @@ const links = document.querySelectorAll('.js-nav a');
 const scrollButton = document.querySelector('.js-scroll');
 const sectionBttButtons = document.querySelectorAll('.js-section-btt');
 const years = document.querySelectorAll('.js-year');
+
+let vh = window.innerHeight * 0.01;
 
 /**
  * Scrolls to the top of the page.
@@ -54,6 +56,17 @@ window.addEventListener('scroll', () => {
 });
 
 /**
+ * Listens for the resize event to occur and updates the viewport height
+ * property accordingly.
+ */
+
+window.addEventListener('resize', () => {
+  vh = window.innerHeight * 0.01;
+
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+/**
  * Code setup to execute immediately including initializing events, and their
  * liseners.
  */
@@ -86,6 +99,10 @@ window.addEventListener('scroll', () => {
     text: 'The event has ended.'
   }, true);
 
+  vh = window.innerHeight * 0.01;
+
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
   if (bttButton) {
     bttButton.addEventListener('click', () => {
       backToTop();
@@ -109,7 +126,7 @@ window.addEventListener('scroll', () => {
       year.innerText = new Date().getFullYear();
     });
   }
-  
+
   if (scrollButton) {
     scrollButton.addEventListener('click', () => {
       scrolls('header');

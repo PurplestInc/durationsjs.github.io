@@ -10,7 +10,7 @@
  * (https://github.com/RobDukarski)
  * (https://github.com/PurplestInc)
  *
- * Version: 1.0.0 (07/30/2018)
+ * Version: 1.0.1 (08/30/2018)
  *
  * Copyright (c) 2018 Purplest, Inc.
  * (https://purplest.com/)
@@ -34,7 +34,7 @@
   --primary-color: #9752e7;
   --primary-dark-color: #8f44e5;
   --primary-light-color: #9c5be8;
-  
+
   --secondary-color: #6a1bc6;
   --secondary-dark-color: #651abc;
   --secondary-light-color: #711dd3;
@@ -245,6 +245,7 @@ footer {
 .spotlight,
 .background {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: fixed;
   width: 100%;
 }
