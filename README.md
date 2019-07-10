@@ -1,2 +1,2 @@
 # durationsjs.github.io
-[durations.js langing page.](https://durationsjs.com)
+[durations.js landing page.](https://durationsjs.com)
